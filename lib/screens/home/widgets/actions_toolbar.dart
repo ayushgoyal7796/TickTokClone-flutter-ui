@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tiktokclone/screens/home/widgets/follow_action.dart';
+import 'package:tiktokclone/screens/home/widgets/music_player_action.dart';
 import 'package:tiktokclone/screens/home/widgets/social_action.dart';
 import 'package:tiktokclone/tiktok_icons.dart';
 
@@ -25,6 +26,7 @@ class ActionsToolbar extends StatelessWidget {
             title: 'Share',
             isShare: true,
           ),
+          MusicPlayerAction(),
         ],
       ),
     );
