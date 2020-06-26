@@ -13,19 +13,9 @@ class ActionsToolbar extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
           FollowAction(),
-          SocialAction(
-            icon: TikTokIcons.heart,
-            title: '3.2m',
-          ),
-          SocialAction(
-            icon: TikTokIcons.chat_bubble,
-            title: '16.4k',
-          ),
-          SocialAction(
-            icon: TikTokIcons.reply,
-            title: 'Share',
-            isShare: true,
-          ),
+          SocialAction(icon: TikTokIcons.heart, title: '3.2m'),
+          SocialAction(icon: TikTokIcons.chat_bubble, title: '16.4k'),
+          SocialAction(icon: TikTokIcons.reply, title: 'Share', isShare: true),
           MusicPlayerAction(),
         ],
       ),
