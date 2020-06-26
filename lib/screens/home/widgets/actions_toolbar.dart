@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:tiktokclone/screens/home/widgets/social_action.dart';
+import 'package:tiktokclone/utils/tiktok_icons.dart';
 
 class ActionsToolbar extends StatelessWidget {
   @override
@@ -8,15 +10,21 @@ class ActionsToolbar extends StatelessWidget {
       color: Colors.red[300],
       child: Column(
         mainAxisSize: MainAxisSize.min,
-        children: List<Widget>.generate(
-          5,
-          (_) => Container(
-            height: 60.0,
-            width: 60.0,
-            color: Colors.blue[300],
-            margin: EdgeInsets.only(top: 20.0),
+        children: <Widget>[
+          SocialAction(
+            icon: TikTokIcons.heart,
+            title: '3.2m',
           ),
-        ),
+          SocialAction(
+            icon: TikTokIcons.chat_bubble,
+            title: '16.4k',
+          ),
+          SocialAction(
+            icon: TikTokIcons.reply,
+            title: 'Share',
+            isShare: true,
+          ),
+        ],
       ),
     );
   }
