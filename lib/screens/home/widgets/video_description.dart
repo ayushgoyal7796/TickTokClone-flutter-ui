@@ -7,9 +7,6 @@ class VideoDescription extends StatelessWidget {
       child: Container(
         height: 70.0,
         padding: EdgeInsets.only(left: 20.0),
-        decoration: BoxDecoration(
-          border: Border.all(),
-        ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.start,
