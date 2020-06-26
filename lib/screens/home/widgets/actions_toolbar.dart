@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tiktokclone/screens/home/widgets/follow_action.dart';
 import 'package:tiktokclone/screens/home/widgets/social_action.dart';
 import 'package:tiktokclone/tiktok_icons.dart';
 
@@ -10,6 +11,7 @@ class ActionsToolbar extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
+          FollowAction(),
           SocialAction(
             icon: TikTokIcons.heart,
             title: '3.2m',

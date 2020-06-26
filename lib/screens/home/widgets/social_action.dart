@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tiktokclone/constants.dart';
 
 class SocialAction extends StatelessWidget {
   final String title;
@@ -10,13 +11,14 @@ class SocialAction extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 60.0,
-      width: 60.0,
+      height: actionWidgetSize,
+      width: actionWidgetSize,
+      margin: EdgeInsets.only(top: 10.0),
       child: Column(
         children: <Widget>[
           Icon(
             icon,
-            size: isShare ? 25.0 : 35.0,
+            size: isShare ? shareActionIconSize : actionIconSize,
             color: Colors.grey[300],
           ),
           Padding(
