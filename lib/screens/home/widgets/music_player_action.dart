@@ -8,7 +8,7 @@ class MusicPlayerAction extends StatelessWidget {
     return Container(
       height: actionWidgetSize,
       width: actionWidgetSize,
-      margin: EdgeInsets.only(top: 10.0),
+      margin: EdgeInsets.only(top: 20.0),
       child: Column(
         children: <Widget>[
           Container(

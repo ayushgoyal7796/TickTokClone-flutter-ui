@@ -5,10 +5,10 @@ class VideoDescription extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: Container(
-        height: 70.0,
+        height: 90.0,
         padding: EdgeInsets.only(left: 20.0),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(
@@ -23,11 +23,17 @@ class VideoDescription extends StatelessWidget {
                   size: 15.0,
                   color: Colors.white,
                 ),
+                SizedBox(
+                  width: 5.0,
+                ),
                 Text(
                   'Artist name - Album name - song',
                   style: TextStyle(fontSize: 12.0),
                 )
               ],
+            ),
+            SizedBox(
+              height: 5.0,
             )
           ],
         ),

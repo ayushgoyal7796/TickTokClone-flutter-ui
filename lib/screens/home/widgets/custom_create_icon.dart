@@ -5,7 +5,7 @@ class CustomCreateIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 27.0,
+      height: 30.0,
       width: 45.0,
       child: Stack(
         children: <Widget>[
@@ -33,7 +33,10 @@ class CustomCreateIcon extends StatelessWidget {
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(7.0),
               ),
-              child: Icon(Icons.add),
+              child: Icon(
+                Icons.add,
+                size: 25.0,
+              ),
             ),
           )
         ],

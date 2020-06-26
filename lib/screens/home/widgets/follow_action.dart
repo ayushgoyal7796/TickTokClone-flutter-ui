@@ -9,6 +9,7 @@ class FollowAction extends StatelessWidget {
     return Container(
       height: actionWidgetSize,
       width: actionWidgetSize,
+      margin: EdgeInsets.only(bottom: 10.0),
       child: Stack(
         children: <Widget>[
           Positioned(
@@ -22,7 +23,8 @@ class FollowAction extends StatelessWidget {
                 borderRadius: BorderRadius.circular(profileImageSize / 2),
               ),
               child: ClipRRect(
-                borderRadius: BorderRadius.circular((profileImageSize - 2) / 2),
+                borderRadius:
+                    BorderRadius.circular((profileImageSize - 2.0) / 2),
                 child: CachedNetworkImage(
                   imageUrl: 'https://github.com/ayushgoyal7796.png',
                   placeholder: (context, url) => CircularProgressIndicator(),
