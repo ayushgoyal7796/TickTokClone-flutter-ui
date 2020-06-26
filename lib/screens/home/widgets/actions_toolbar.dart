@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tiktokclone/screens/home/widgets/social_action.dart';
-import 'package:tiktokclone/utils/tiktok_icons.dart';
+import 'package:tiktokclone/tiktok_icons.dart';
 
 class ActionsToolbar extends StatelessWidget {
   @override

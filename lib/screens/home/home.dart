@@ -10,13 +10,8 @@ class HomeScreen extends StatelessWidget {
       backgroundColor: Colors.black,
       body: Column(
         children: <Widget>[
-          // Top Section
           TopSection(),
-
-          // Middle Section
           MiddleSection(),
-
-          // Bottom Section
           BottomSection(),
         ],
       ),
